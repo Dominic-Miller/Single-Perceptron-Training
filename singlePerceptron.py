@@ -5,6 +5,7 @@ def neuron(inputs):
     inputs = pd.Series(inputs)
     return sign((weights * inputs).sum())
 
+#This is the activation function
 def sign(n):
     if n >= 0:
         return 1
